@@ -6,7 +6,7 @@ import (
 )
 
 func main() {
-	fs:= http.FileServer(http.Dir("./static")
+	fs := http.FileServer(http.Dir("./static"))
 	http.Handle(pattern:"/", fs)
 
 	log.Printlin(v...: "Starting the application, listening on :8080...")
