@@ -10,4 +10,5 @@ func main() {
 	var router *gin.Engine
 	router = gin.Default()
 	router.Static("/", "./static")
+	router.Run()
 }
