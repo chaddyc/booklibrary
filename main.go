@@ -5,7 +5,7 @@ import (
 	"net/http"
 )
 
-func main(
+func main() {
 	fs:= http.FileServer(http.Dir("./static")
 	http.Handle(pattern:"/", fs)
 
@@ -14,4 +14,4 @@ func main(
 	if err != nil {
 		log.Fatal(err)
 	}
-)
+}
