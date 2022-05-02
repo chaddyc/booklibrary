@@ -1,1 +1,11 @@
-##
+kind: pipeline
+type: docker
+name: go-test-ci
+
+steps:
+- name: go-test
+  image: ubuntu-latest
+  commands:
+  - go build
+  - go test
+
